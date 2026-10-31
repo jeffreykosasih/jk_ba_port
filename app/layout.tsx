@@ -30,6 +30,8 @@ export const metadata: Metadata = {
   description,
   openGraph: { title, description, type: 'website', locale: 'en_AU' },
   twitter: { card: 'summary_large_image' },
+  // One address per page for search engines, whichever domain served it.
+  alternates: { canonical: '/' },
 };
 
 const nav = [

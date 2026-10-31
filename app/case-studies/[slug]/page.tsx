@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: study.summary,
     // Without its own, a shared link would show the home page's title.
     openGraph: { title: `${study.title} | ${profile.name}`, description: study.summary, type: 'article', locale: 'en_AU' },
+    alternates: { canonical: `/case-studies/${study.slug}` },
   };
 }
 
