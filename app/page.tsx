@@ -98,6 +98,13 @@ export default function Home() {
                   </div>
                   <h3 className="display mt-5 text-[2rem] lg:text-[2.5rem]">{study.title}</h3>
                   <p className="mt-3 text-muted">{study.summary}</p>
+                  {/* The result, readable before anyone opens the case study. */}
+                  {study.outcome && (
+                    <p className="mt-4 font-semibold">
+                      <span className="label mr-2 text-accent">Outcome</span>
+                      {study.outcome}
+                    </p>
+                  )}
                   <p className="mt-auto pt-8">
                     <Link className="btn" href={`/case-studies/${study.slug}`}>
                       Read the {study.title} case study
