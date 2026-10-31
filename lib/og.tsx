@@ -93,6 +93,8 @@ export async function ogImage({ kicker, title, line, footer }: { kicker: string;
         </div>
       </div>
     ),
-    { ...ogSize, fonts },
+    // An empty `fonts` list doesn't fall back to the built-in font: it fails
+    // the build with "No fonts are loaded". Leave it out instead.
+    { ...ogSize, ...(fonts.length > 0 ? { fonts } : {}) },
   );
 }
