@@ -74,11 +74,17 @@ export function SiteMenu({
           <a className="btn btn-signal" href={`mailto:${email}`}>
             Email me
           </a>
-          <a className="btn" href={linkedin}>
+          <a className="btn" href={linkedin} target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
           {/* The header drops its Resume button on the narrowest phones. */}
-          <a className="btn min-[22.5rem]:hidden" href={resume}>
+          <a
+            className="btn min-[22.5rem]:hidden"
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Resume (PDF, opens in a new tab)"
+          >
             Resume (PDF)
           </a>
         </div>

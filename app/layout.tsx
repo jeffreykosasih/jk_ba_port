@@ -69,7 +69,13 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
               <a className="btn min-h-10 px-4 max-lg:hidden" href={`mailto:${profile.email}`}>
                 Email me
               </a>
-              <a className="btn min-h-10 px-3 max-[22.5rem]:hidden sm:px-4" href={profile.resume}>
+              <a
+                className="btn min-h-10 px-3 max-[22.5rem]:hidden sm:px-4"
+                href={profile.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Resume (PDF, opens in a new tab)"
+              >
                 Resume
               </a>
               <SiteMenu items={nav} email={profile.email} linkedin={profile.linkedin} resume={profile.resume} />

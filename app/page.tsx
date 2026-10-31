@@ -49,10 +49,10 @@ export default function Home() {
                 <a className="btn btn-signal" href={`mailto:${profile.email}`}>
                   Email me
                 </a>
-                <a className="btn" href={profile.resume}>
+                <a className="btn" href={profile.resume} target="_blank" rel="noopener noreferrer" aria-label="Resume (PDF, opens in a new tab)">
                   Resume (PDF)
                 </a>
-                <a className="btn" href={profile.linkedin}>
+                <a className="btn" href={profile.linkedin} target="_blank" rel="noopener noreferrer">
                   LinkedIn
                 </a>
               </div>
@@ -267,10 +267,10 @@ export default function Home() {
           <a className="btn btn-signal" href={`mailto:${profile.email}`}>
             Email me
           </a>
-          <a className="btn" href={profile.linkedin}>
+          <a className="btn" href={profile.linkedin} target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
-          <a className="btn" href={profile.resume}>
+          <a className="btn" href={profile.resume} target="_blank" rel="noopener noreferrer" aria-label="Resume (PDF, opens in a new tab)">
             Resume (PDF)
           </a>
         </div>
